@@ -1,0 +1,1 @@
+DB_CNN="mongodb+srv://thomas:1qazxsw2@cluster0.643zl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
