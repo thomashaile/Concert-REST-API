@@ -27,11 +27,11 @@ DB_CNN=mongodb://localhost:27017/$db_name
 
 ---**URL** ---
 
-- GET   /api/concerts   => to get all the concerts
-- GET   /api/concerts/:id => get one concert by id
-- POST  /api/concerts/new => to add/create new concert 
-- PUT    /api/concerts/:id => to update concert
-- DELETE  /api/concerts/:id => to delete specfic concert
+- **GET   /api/concerts      => to get all the concerts
+- **GET   /api/concerts/:id   => get one concert by id
+- **POST  /api/concerts/new   => to add/create new concert 
+- **PUT    /api/concerts/:id   => to update concert
+- **DELETE  /api/concerts/:id   => to delete specfic concert
 
 #### **Add a concert**
 
