@@ -74,7 +74,7 @@ A json object for the concert to update with any of `title`, `artist`, `venue`, 
 
 ##### **Response `200`**
 
-A json object for the deleted account with confirmation `msg`.
+A json object for the deleted concert with confirmation `msg`.
 
 ```
 {
@@ -103,7 +103,7 @@ A json object with  `id`, `title`, `artist`, `venue`, `concert_date` and `create
 
 ##### **Response `200`**
 
-A json object with  an array of `users`.
+A json object with  an array of `concerts`.
 
 ```
 {
