@@ -14,7 +14,8 @@ const concertSchema = Schema({
         required: true
     },
     concert_date: {
-        type: Date
+        type: Date,
+        required: true
     },
     created_at: {
         type: Date,

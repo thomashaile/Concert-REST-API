@@ -50,7 +50,8 @@ const controllers = {
                 id: parsedConcert.length + 1,
                 title: concertName,
                 artist: req.body.artist,
-                venue: req.body.venue
+                venue: req.body.venue,
+				concert_date: req.body.date
             };
             concerts.push(concert);
             //console.log("concert");
@@ -74,6 +75,7 @@ const controllers = {
             concert.title = newTitle;
             concert.artist = req.body.artist;
             concert.venue = req.body.venue;
+			concert.concert_date = req.body.date;
             concerts.push(concert);
             let objToString = JSON.stringify(parsedConcert);
             await writeFile(DATA_DIR, objToString);
