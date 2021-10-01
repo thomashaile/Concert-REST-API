@@ -6,7 +6,7 @@ simple rest api with a single endpoint that lists concerts. A concert should hav
 
 This project can run on virtually any system where Node.js is supported. This means it runs on Linux, macOS, Windows as well as container solutions such as Docker and Heroku.
 #### **Versions**
-- MongoDB 4.4 
+- MongoDB 
 - NodeJS 12.8 
 
 ### **1 | Create and/or configure environement variables**
@@ -23,15 +23,14 @@ DB_CNN=mongodb://localhost:27017/$db_name
 ### **3 | Run the server**
 - To run type: `npm run start or node index.js`
 
-## URL and Endpoints
-**[Simple-REST-api](https://atmireconcertapi.herokuapp.com/api/concerts/)**
+## URL and Endpoints [Live](https://atmireconcertapi.herokuapp.com/api/concerts/)
 
----**API Endpoints** ---
-- **GET   /api/concerts      => to get all the concerts
-- **GET   /api/concerts/:id   => get one concert by id
-- **POST  /api/concerts/new   => to add/create new concert 
-- **PUT    /api/concerts/:id   => to update concert
-- **DELETE  /api/concerts/:id   => to delete specfic concert
+  **API Endpoints** 
+- **GET   `/api/concerts`**     => to get all the concerts
+- **GET   `/api/concerts/:id`**   => get one concert by id
+- **POST  `/api/concerts/new`**   => to add/create new concert
+- **PUT   `/api/concerts/:id`**  => to update concert
+- **DELETE  `/api/concerts/:id`**   => to delete specfic concert
 
 #### **Add a concert**
 
