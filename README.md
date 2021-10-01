@@ -23,10 +23,10 @@ DB_CNN=mongodb://localhost:27017/$db_name
 ### **3 | Run the server**
 - To run type: `npm run start or node index.js`
 
-### **API endpoints**
+## URL and Endpoints
+**[Simple-REST-api](https://atmireconcertapi.herokuapp.com/api/concerts/)**
 
----**URL** ---
-
+---**API Endpoints** ---
 - **GET   /api/concerts      => to get all the concerts
 - **GET   /api/concerts/:id   => get one concert by id
 - **POST  /api/concerts/new   => to add/create new concert 
