@@ -41,12 +41,10 @@ DB_CNN=mongodb://localhost:27017/$db_name
 A json object for concert to register with **`title`**, **`artist`**, **`venue`**, **`concert_date`**
 ```
 {
-  "id": "concert id",
- "title": "concert name/title",
-  "artist": "artist name",
-  "venue": "adress of the concert",
-  "concert_date": "date of concert",
-  "created_at":"date of added"
+    "title": "2022 Conceert",
+    "artist": "Belgie artists",
+    "venue": "Leuven",
+    "date": "2021-12-30T01:11:22.932+00:00"
 }
 ```
 #### **Update an concert**
@@ -58,13 +56,11 @@ A json object for concert to register with **`title`**, **`artist`**, **`venue`*
 A json object for the concert to update with any of `title`, `artist`, `venue`, `concert_date`.
 
 ```
-{ 
-   "id": "concert id",
-  "title": "new concert name/title",
-  "artist": "new artist name",
-  "venue": "new adress of the concert",
-  "concert_date": "updated date of concert",
-  "creeated_at": "date of added",
+{
+    "title": "october Conceert",
+    "artist": "developers",
+    "venue": "Leuven",
+    "date": "2021-12-30T01:11:22.932+00:00"
 }
 ```
 #### **Delete an concert**
@@ -87,12 +83,14 @@ A json object with  `id`, `title`, `artist`, `venue`, `concert_date` and `create
 
 ```
 {
-  "id": "5f9ed5ce47c42738d03d178d",
- "title": "concert name/title",
-  "artist": "Artist name",
-  "venue": "adress of the concert",
-  "concert_date": "2021-09-30T01:11:22.932+00:00",
-  "created_at":"2021-09-30T01:11:22.932+00:00
+    "status": "Ok",
+    "concert": {
+        "id": 2,
+        "title": "BelgiumExpo",
+        "artist": "All Belgian famious artists",
+        "venue": "1200 Brussel",
+        "concert_date": "2021-09-30T01:11:22.932+00:00"
+    }
 }
 ```
 
@@ -108,28 +106,33 @@ A json object with  an array of `concerts`.
 {
   "concerts": [
     {
-      "id": "5f9ed5ce47c42738d03d178d",
-      "title": "conceert title",
-      "artist": "artist name",
-      "venue": "adress of the concert",
-      "concert_date": "2021-09-30T01:11:22.932+00:00",
-      "created_at":"2021-09-30T01:11:22.932+00:00
+        "id": 1,
+        "title": "Stronger together",
+        "artist": "musse j",
+        "venue": "123456 Leuven",
+        "concert_date": "2021-09-30T01:11:22.932+00:00"
     },
     {
-      "id": "5f9ed5ce47c42738d03d178d",
-      "title": "conceert title",
-      "artist": "artist name",
-      "venue": "adress of the concert",
-      "concert_date": "2021-09-30T01:11:22.932+00:00",
-      "created_at":"2021-09-30T01:11:22.932+00:00
-    }, {
-      "id": "5f9ed5ce47c42738d03d178d",
-      "title": "conceert title",
-      "artist": "artist name",
-      "venue": "adress of the concert",
-      "concert_date": "2021-09-30T01:11:22.932+00:00",
-      "created_at":"2021-09-30T01:11:22.932+00:00
+        "id": 2,
+        "title": "BelgiumExpo",
+        "artist": "All Belgian famious artists",
+        "venue": "1200 Brussel",
+        "concert_date": "2021-09-30T01:11:22.932+00:00"
     },
-  ]
+    {
+        "id": 3,
+        "title": "Willy Concert",
+        "artist": "willy sommers",
+        "venue": "1234 Lennik",
+        "concert_date": "2021-09-30T01:11:22.932+00:00"
+    },
+    {
+        "id": 4,
+        "title": "2022 Conceert",
+        "artist": "A-Z",
+        "venue": "oost Leuven",
+        "concert_date": "2021-12-30T01:11:22.932+00:00"
+    }
+]
 }
 ```
